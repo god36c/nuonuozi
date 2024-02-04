@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>芙蓉不及美人妆，水殿风来珠翠香</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .jc {
+            width: 140px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .stage {
+            width: 140px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: move 60s linear infinite;
+        }
+
+        @keyframes move {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        img {
+            width: 140px;
+            height: 200px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            box-shadow: 0px 0px 10px white;
+            border: 1px solid white;
+            border-radius: 12px;
+            -webkit-box-reflect: below 20px linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.4));
+        }
+
+        .img1 { transform: rotateY(40deg) translateZ(450px); }
+        .img2 { transform: rotateY(80deg) translateZ(450px); }
+        .img3 { transform: rotateY(120deg) translateZ(450px); }
+        .img4 { transform: rotateY(160deg) translateZ(450px); }
+        .img5 { transform: rotateY(200deg) translateZ(450px); }
+        .img6 { transform: rotateY(240deg) translateZ(450px); }
+        .img7 { transform: rotateY(280deg) translateZ(450px); }
+        .img8 { transform: rotateY(320deg) translateZ(450px); }
+        .img9 { transform: rotateY(0deg) translateZ(450px); }
+    </style>
+</head>
+<body>
+    <div class="jc">
+        <div class="stage">
+            <img class="img1" src="佳诺/洛雪.jpg">
+            <img class="img2" src="佳诺/星羽落.jpg">
+            <img class="img3" src="佳诺/韵曦.jpg">
+            <img class="img4" src="佳诺/紫流梦.jpg">
+            <img class="img5" src="佳诺/寒漓.jpg">
+            <img class="img6" src="佳诺/琉璃.jpg">
+            <img class="img7" src="佳诺/梦曦.jpg">
+            <img class="img8" src="佳诺/慕雪.jpg">
+            <img class="img9" src="佳诺/雪瑶.jpg">
+        </div>
+    </div>
+</body>
+</html>
